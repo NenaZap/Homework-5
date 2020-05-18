@@ -1,0 +1,76 @@
+#exercise one
+import math
+maximum_share = 0
+big_total = 0
+def div_w_remainder(dividend,divisor):
+    dividend = int(dividend)
+    divisor = int(divisor)
+    whole = dividend//divisor
+    remainder = dividend%divisor
+    return(remainder,whole)
+
+def share_items(number_of_things,number_of_people):
+    int(number_of_things)
+    int(number_of_people)
+    whole, remainder = div_w_remainder(number_of_things,number_of_people)
+    big_total += number_of_things
+    maximum_share += whole
+    if remainder >= 1:
+        maximum_share += 1
+        return(number_of_things, number_of_people)
+    
+def question_one():
+    share_items(10,4)
+    share_items(20,3)
+    share_items(14,7)
+    print("maximum is equal to...", maximum_share)
+    print("big total is equal to...", big_total)
+    
+#exercise two
+import turtle
+import random
+my_screen = turtle.screen()
+my_turtle = turtle.Trutle()
+my_screen.colormode(255)
+screen_size_multiplier =.7
+def draw_middle():
+    turtle.color('pink')
+    turtle.right(85)
+    turtle.down()
+    turtle.forward(90)
+    turtle.up()
+    turtle.back(90)
+    turtle.left(85)
+
+def draw_spagetti_bits():
+    turtle.color('black')
+    turtle.right(70)
+    turtle.forward(90)
+    turtle.right(30)
+    turtle.down(10)
+    turtle.forward(25)
+    turtle.back(30)
+    turtle.left(90)
+    turtle.forward(30)
+    turtle.back(30)
+    turtle.right(25)
+
+def draw_limbs():
+    turtle.color('yellow')
+    turtle.right(90)
+    turtle.forward(30)
+    turtle.left(90)
+    turtle.forward(30)
+    turtle.back(30)
+    turtle.left(100)
+    turtle.forward(30)
+    turtle.back(30)
+    turtle.left(90)
+    turtle.back(30)
+    turtle.left(90)
+   
+def draw_head()
+  turtle.color('green')
+  turtle.circle(30)
+  
+
